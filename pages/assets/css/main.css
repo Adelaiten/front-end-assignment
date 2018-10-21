@@ -1,0 +1,131 @@
+body{
+background: url("images/background.jpg") fixed;
+background-position: 50% 50%;
+background-repeat: no-repeat;
+background-size: 100% auto;
+margin: 0;
+padding: 0;
+}
+.content{
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+width: 100%;
+}
+.top{
+height: 20vw;
+background-image: url("images/backgroundImage.jpg");
+
+background-size: cover;
+}
+header{
+width: 100%;
+position: fixed;
+background-color: rgba(255,255,255,0.5);
+font-family: 'Lato', sans-serif;
+padding: 0.5vw;
+height: 15%;
+}
+.profile-photo{
+float: left;
+width: 7vw;
+box-shadow: 0 0 2vw rgba(0,0,0,0.2);
+border: 0vw solid black;
+border-radius: 0.8vw;
+margin-right: 2vw;
+}
+.full-name-proffesion{
+position: relative;
+font-size: 1vw;
+}
+.nav{
+position: absolute;
+left: 30%;
+top: 35%;
+float: right;
+text-align: center;
+}
+.nav a{
+vertical-align: top;
+display: inline-block;
+text-decoration: none;
+font-size: 1.5vw;
+height: 10%;
+color: #990000;
+text-transform: uppercase;
+padding-right: 9vw;
+}
+.nav a:hover {
+color: #ff0000;
+}
+.bar{
+border-top: 0.1vw solid black;
+background-color: #b30000;
+padding: 0.8vw;
+border-bottom: 0.1vw solid black;
+font-family: 'Lato', sans-serif;
+font-size: 1.1vw;
+}
+.bar p{
+display: inline;
+padding: 10vw;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+
+
+.bar2{
+border-top: 0.1vw solid black;
+background-color: #b30000;
+padding: 0.8vw;
+border-bottom: 0.1vw solid black;
+font-family: 'Lato', sans-serif;
+font-size: 1.1vw;
+}
+.bar2 p{
+display: inline;
+padding: 10vw;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+footer{
+position: relative;
+height: 10vw;
+background-color: #800000;
+}
+.bar3{
+display: inline-block;
+text-align: center;
+margin-left: 10%;
+width: 80%;
+height: 1vw;
+background-color: #2e2e1f;
+border: 0.1vw solid #black;
+}
+footer p{
+
+color: #fff;
+font-size: 2vw;
+margin-left: 10vw;
+}
+
+footer nav{
+float: left;
+position: absolute;
+text-transform: uppercase;
+top: 35%;
+left: 20vw;
+font-size: 2vw;
+margin-left: 10vw;
+}
+footer nav a{
+color: #fff;
+text-decoration: none;
+padding-right: 4vw;
+
+}
