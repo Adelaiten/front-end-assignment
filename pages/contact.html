@@ -50,15 +50,7 @@ function doCheck(){
     document.getElementById("mysubmit").disabled = !allFilled;
 };
 
-window.onload = function(){
-    var inputs = document.getElementsByTagName('input');
-    for(var i=0; i<inputs.length; i++){
-        if(inputs[i].type == "text"){
-            inputs[i].onkeyup = doCheck;
-            inputs[i].onblur = doCheck;
-        }
-    }
-};
+
 
 function validateName(){
 var name = document.getElementById("name").value;
@@ -71,9 +63,27 @@ function validateEmail() {
     return re.test(String(email).toLowerCase());
 };
 
-window.onload = function(){
-document.getElementById
+function fireMethods(){
+    if (!validateName() && !validateEmail()){
+	alert("Wrong name and email");
+}else if (!validateName()){
+alert("Wrong name!");
+}else if (!validateEmail()){
+alert("Wrong Email!");
 }
+};
+
+window.onload = function(){
+    var inputs = document.getElementsByTagName('input');
+    for(var i=0; i<inputs.length; i++){
+        if(inputs[i].type == "text"){
+            inputs[i].onkeyup = doCheck;
+            inputs[i].onblur = doCheck;
+        }
+    }
+document.getElementById('mysubmit').onclick = fireMethods;
+};
+
 </script>
 
 </head>
