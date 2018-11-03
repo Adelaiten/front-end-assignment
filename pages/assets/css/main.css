@@ -12,20 +12,29 @@ body {
     justify-content: space-between;
     width: 100%;
 }
-.top {
-    height: 20vw;
-    background-image: url("images/backgroundImage.jpg");
-    background-size: cover;
+.top{
+    margin: 0;
+    padding: 0;
+    height: 23vw;
+}
+.top-image{
+    height: 23vw;
+    width: 100%;
+    size: 100% 100%;
+    margin: 0;
+    padding: 0;
+
 }
 header {
     display: flex;
     flex-direction: row;
     width: 100%;
     position: fixed;
-    background-color: rgba(255,255,255,0.5);
+    background-color: rgba(197, 196, 196, 0.5);
     font-family: 'Lato', sans-serif;
     padding: 0.5%;
     height: 15%;
+    top: 0%;
 }
 .profile-photo {
     width: 7%;
@@ -35,7 +44,6 @@ header {
     margin-right: 2vw;
 }
 .full-name-proffesion {
-
     font-size: 1vw;
 }
 .top-nav-bar {
