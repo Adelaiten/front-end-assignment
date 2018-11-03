@@ -1,266 +1,79 @@
 
 /* WSZEDZIE */
-.main{
-height: 95vw;
-background-color: #fff;
+.main {
+    height: 95vw;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
 }
-.about{
-font-family: 'Lato', sans-serif;
-margin-top: 3vw;
-height: 47vw;
-background-color: rgba(182,182,182,0.1);
+.about {
+    display: flex;
+    flex-direction: row;
+    font-family: 'Lato', sans-serif;
+    margin-top: 3vw;
+    height: 47vw;
+    background-color: rgba(182,182,182,0.1);
 }
-.profile-photo-second{
-float: left;
-width: 25vw;
-height: 25vw;
-margin-top: 8vw;
-margin-left: 7vw;
-border-radius: 0.5vw;
+.profile-photo-second {
+    /*float: left;*/
+    width: 25vw;
+    height: 25vw;
+    margin-top: 8vw;
+    margin-left: 7vw;
+    border-radius: 0.5vw;
 }
 
-.about-me{
-text-align: left;
-float: left;
-width: 40%;
-margin-top: 8vw;
-margin-left: 7vw;
-height: 45vw;
+.about-me {
+
+    text-align: left;
+    width: 40%;
+    margin-top: 8vw;
+    margin-left: 7vw;
+    height: 45vw;
 
 }
-.about-me h3{
-font-size: 1vw;
+.about-me h3 {
+    font-size: 1vw;
 }
-.about-me p{
-font-size: 1.5vw;
+.about-me p {
+    font-size: 1.5vw;
 }
-.about-me h2{
-font-size: 3vw;
+.about-me h2 {
+    font-size: 3vw;
 }
-.toDo{
-position: relative;
-clear:both;
-font-family: 'Lato', sans-serif;
-height: 35vw;
-background-color: rgba(182,182,182,0.1);
+.experience-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    height: 35vw;
+    background-color: rgba(182,182,182,0.1);
 }
-.co{
-margin-left: 4vw;
+.experience-mid{
+    display: flex;
+    flex-direction: row;
+    padding-top: 3.5vw;
 }
 .icon-laptop{
-
-}
-.laptopp{
-position: absolute;
-left: 25%;
-top: 20%;
-width: 25vw;
-font-size: 1.5vw;
-}
-.experience{
-margin-left: 10vw;
+    padding-top: 2vw;
 }
 
-.pencil{
-position: absolute;
-left: 50%;
-top: 35%;
+.laptop-text {
+    display: block;
+    width: 30vw;
+    font-size: 1.5vw;
 }
 
-.pencilp{
-position: absolute;
-width: 25vw;
-left: 62%;
-top: 20%;
-
-font-size: 1.5vw;
+.pencil {
+    padding-top: 4vw;
 }
 
-/*-----------------Start---------------------------
-
-body{
-background: url("images/background.jpg") fixed;
-background-position: 50% 50%;
-background-repeat: no-repeat;
-background-size: 100% auto;
-margin: 0;
-padding: 0;
-}
-.content{
-
-width: 100%;
-}
-.top{
-
-width: 100%;
-height: 20vw;
-background-image: url("images/indexProgrammer.jpg");
-background-size: cover;
-top: 0;
-overflow-x: auto;
-z-index: 1;
-}
-header{
-float:left;
-position: fixed;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
-font-family: 'Lato', sans-serif;
-top: 0;
-width: 100%;
-background-color: rgba(255,255,255,0.5);
-padding: 0.5vw;
-white-space: nowrap;
-
-z-index: 1;
+.pencil-text {
+    width: 25vw;
+    font-size: 1.5vw;
 }
 
-.full-name-proffesion{
-margin-left: auto;
-font-size: .8vw;
-color: #666633;
-padding: 0.5vw;
+.experience-title{
+    font-size: 2vw;
 }
 
-.profile-photo{
-margin-left: auto;
-width: 7vw;
-box-shadow: 0 0 2vw rgba(0,0,0,0.2);
-
-border: 0vw solid black;
-border-radius: 0.8vw;
-}
-.nav{
-width: 100%;
-
-padding-top: 2.5vw;
-}
-.nav a{
-padding-right: 9vw;
-font-size: 1.5vw;
-height: 10%;
-text-decoration: none;
-color: #990000;
-text-transform: uppercase;
-}
-
-.nav a:hover {
-color: #ff0000;
-
-}
-
-
-------------CENTER--------------
-.bar{
-
-border-top: 0.1vw solid black;
-background-color: #b30000;
-width: 100%;
-padding: 1vw;
-border-bottom: 0.1vw solid black;
-font-family: 'Lato', sans-serif;
-font-size: 1.1vw;
-}
-.bar p{
-display: inline;
-padding: 10vw;
-color: #fff;
-text-transform: uppercase;
-font-weight: bold;
-}
-
-.main{
-position: relative;
-width: 100%;
-height: 80vw;
-margin: auto;
-margin-bottom: 10vw;
-background-color: #fff;
-}
-.about{
-font-family: 'Lato', sans-serif;
-margin-top: 3vw;
-height: 45vw;
-background-color: rgba(182,182,182,0.1);
-
-}
-.profile-photo-second{
-width: 30vw;
-height: 30vw;
-margin-top: 8vw;
-margin-left: 7vw;
-border-radius: 0.5vw;
-}
-.about-me{
-position: absolute;
-text-align: left;
-float: right;
-left: 40vw;
-top: 10vw;
-width: 40%;
-}
-.about-me h3{
-font-size: 1vw;
-}
-.about-me p{
-font-size: 1.5vw;
-}
-.about-me h2{
-font-size: 3vw;
-}
-
-
-.bar2{
-position: absolute;
-box-sizing: border-box;
-bottom: -55vw;
-width: 100%;
-clear:both;
-border-top: 0.1vw solid black;
-background-color: #b30000;
-padding: 1vw;
-border-bottom: 0.1vw solid black;
-font-family: 'Lato', sans-serif;
-font-size: 1.1vw;
-}
-.bar2 p{
-font-family: 'Lato', sans-serif;
-font-weight: bold;
-color: #fff;
-text-transform: uppercase;
-display: inline;
-padding-left: 10vw;
-}
-
-.toDo{
-
-margin-left: 30vw;
-margin-top: 8vw;
-}
-.toDo h2{
-font-size: 2vw;
-color: red;
-margin-left: 13vw;
-}
-.laptop{
-margin-left: 10vw;
-}
-.toDo .laptopp{
-float: left;
-font-size: 1.3vw;
-width: 25vw;
-padding-left: 3vw;
-margin-left: 5vw;
-
-}
-
-
-footer{
-align-items: flex-end;
-clear: both;
-width: 100%;
-height: 10vw;
-background-color: #404040;
-}
-*/

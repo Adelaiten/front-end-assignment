@@ -1,137 +1,66 @@
 <!DOCTYPE HTML>
 <html>
-<head>
-<title>Karol Trzaska Business Card</title>
-<meta charset = "UTF-8">
-<link rel="stylesheet" type="text/css" href ="assets/css/about-me.css">
-<link rel="stylesheet" type="text/css" href ="assets/css/main.css">
-<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"> 
-<link rel="icon" href="assets/css/images/favicon-256.png">
-<link rel ="stylesheet" href= "css/fontello.css">
-<style>
-.main{
-background: url("assets/css/images/email2.png");
-height: 50vw;
-background-size: cover;
-}
-form{
-position: absolute;
-left: 60%;
-top: 80%;
-}
-form p{
-font-size: 1.2vw;
-}
-form input{
-height: 2vw;
-width: 20vw;
-}
-.tresc{
-height: 10vw;
-width: 35vw;
-}
-.button{
-width: 5vw;
-}
-</style>
+	<head>
+		<title>Karol Trzaska Business Card</title>
+		<meta charset = "UTF-8">
+		<link rel="stylesheet" type="text/css" href ="assets/css/about-me.css">
+		<link rel="stylesheet" type="text/css" href ="assets/css/main.css">
+		<link rel="stylesheet" type="text/css" href ="assets/css/contact.css">
+		<link href="https://fonts.googleapis.com/css?family=Lato:100,300,400" rel="stylesheet"> 
+		<link rel="icon" href="assets/css/images/favicon-256.png">
+		<link rel ="stylesheet" href= "css/fontello.css">
+	</head>
+	<body>
+		<div class = "content">
+			<section class = "top">
+				<header>
+					<img src = "assets/css/images/zdjeciecc.jpg" class = "profile-photo">
+					<div class = "full-name-proffesion">
+						<h1 class = "full-name">Karol Trzaska</h1>
+						<h3 class = "proffesion">Full-Stack Developer</h3>
+					</div>
 
-<script type = "text/JavaScript">
-function doCheck(){
-    var allFilled = true;
+					<nav class = "top-nav-bar">
+						<a href="index.html">Home</a><!--
+						--><a href="about-me.html">O mnie</a><!--
+						--><a href="my-projects.html">Moje Projekty</a><!--
+						--><a href="contact.html">Kontakt</a>
+					</nav>
+				</header>
+				
+			</section>
 
-    var inputs = document.getElementsByTagName('input');
-    for(var i=0; i<inputs.length; i++){
-        if(inputs[i].type == "text" && inputs[i].value == ''){
-            allFilled = false;
-            break;
-        }
-    }
+				<div class = "top-bar">
+					<p>Java</p>
+					<p>Python</p>
+					<p>PostgreSQL</p>
+				</div>
 
-    document.getElementById("mysubmit").disabled = !allFilled;
-};
+			<section class = "main">
+				<form method = "post" enctype="text/plain">
+					<p>Name:</p>
+					<input type="text" name="name" placeholder = "enter your name" id = "name"><br>
+					<p>E-mail:</p>
+					<input type="text" name="mail" placeholder = "enter your email" id = "mail" ><br>
+					<p>Treść</p>
+					<input type="text" name="tresc" size="50" class = "tresc" placeholder = "Enter your text" id = "text"<br><br>
+					<input type="submit" value="Send"  class = "button" id = "mysubmit"  disabled>
+					<input type="reset" value="Reset" class = "button">
+				
+				</form>
+			</section>
 
-
-
-function validateName(){
-var name = document.getElementById("name").value;
-return /^[A-Za-z\s]+$/.test(String(name));
-};
-
-function validateEmail() {
-    var email = document.getElementById("mail").value;
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(String(email).toLowerCase());
-};
-
-function fireMethods(){
-    if (!validateName() && !validateEmail()){
-	alert("Wrong name and email");
-}else if (!validateName()){
-alert("Wrong name!");
-}else if (!validateEmail()){
-alert("Wrong Email!");
-}
-};
-
-window.onload = function(){
-    var inputs = document.getElementsByTagName('input');
-    for(var i=0; i<inputs.length; i++){
-        if(inputs[i].type == "text"){
-            inputs[i].onkeyup = doCheck;
-            inputs[i].onblur = doCheck;
-        }
-    }
-document.getElementById('mysubmit').onclick = fireMethods;
-};
-
-</script>
-
-</head>
-<body>
-<div class = "content">
-<section class = "top">
-<header>
-		<img src = "assets/css/images/zdjeciecc.jpg" class = "profile-photo">
-		<div class = "full-name-proffesion">
-			<h1 class = "full-name">Karol Trzaska</h1>
-			<h3 class = "proffesion">Full-Stack Developer</h3>
+			<div class = "mid-bar">
+				<p>HTML5</p>
+				<p>CSS3</p>
+				<p>JavaScript</p>
+			</div>
+			<footer>
+				<div class = "bottom-bar"></div>
+				<span>&copy; Karol Trzaska - pierwsze podejście do front-endu w ramach nauki w szkole programowania Codecool</span>
+			</footer>
 		</div>
-
-		<nav class = "nav">
-		
-		<a href="index.html">Home</a><!--
-		--><a href="about-me.html">O mnie</a><!--
-		--><a href="my-projects.html">Moje Projekty</a><!--
-		--><a href="contact.html">Kontakt</a>
-	
-		</nav>
-		</header>
-</section>
-	<div class = "bar"><p>Java</p><p>Python</p><p>PostgreSQL</p></div>
-	<section class = "main">
-	<form method = "post" enctype="text/plain">
-		<p>Name:</p>
-		<input type="text" name="name" placeholder = "enter your name" id = "name"><br>
-		<p>E-mail:</p>
-		<input type="text" name="mail" placeholder = "enter your email" id = "mail" ><br>
-		<p>Treść</p>
-		<input type="text" name="tresc" size="50" class = "tresc" placeholder = "Enter your text" id = "text"<br><br>
-		<input type="submit" value="Send"  class = "button" id = "mysubmit"  disabled>
-		<input type="reset" value="Reset" class = "button">
-	
-	</form>
-	</section>
-
-<div class = "bar2"><p>HTML5</p><p>CSS3</p><p>JavaScript</p></div>
-		<footer>
-	<div class = "bar3"></div>
-	<p>&copy; Karol Trzaska</p> <nav>
-		<a href="index.html">Home</a><!--
-		--><a href="about-me.html">O mnie</a><!--
-		--><a href="schedule.html">Moje Projekty</a><!--
-		--><a href="register.html">Kontakt</a></nav>
-		</footer>
-</div>
-</body>
+		<script src="assets/javascript/about-me-script.js"></script>
+	</body>
 </html>
 

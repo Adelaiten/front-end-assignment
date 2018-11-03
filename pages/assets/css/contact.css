@@ -1,0 +1,24 @@
+.main{
+    background: url("images/email2.png");
+    height: 50vw;
+    background-size: cover;
+}
+form{
+    position: absolute;
+    left: 60%;
+    top: 80%;
+}
+form p{
+    font-size: 1.2vw;
+}
+form input{
+    height: 2vw;
+    width: 20vw;
+}
+.tresc{
+    height: 10vw;
+    width: 35vw;
+}
+.button{
+    width: 5vw;
+}
